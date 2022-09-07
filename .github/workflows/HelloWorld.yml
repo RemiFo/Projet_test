@@ -1,6 +1,10 @@
 name: HelloWorld
 on: [push]
 jobs:
+
+  variables:
+      monTexte: "Bonjour le monde"
+
   job1:
     runs-on: ubuntu-latest
 
@@ -12,8 +16,6 @@ jobs:
   job2:
     runs-on: ubuntu-latest
 
-    variables:
-      monTexte: "Bonjour le monde"
     steps:
     - uses: actions/checkout@v3
     - name: Run a one-line script
