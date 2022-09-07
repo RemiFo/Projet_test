@@ -9,7 +9,7 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!.
 
-  job1:
+  job2:
     runs-on: ubuntu-latest
 
     variables:
