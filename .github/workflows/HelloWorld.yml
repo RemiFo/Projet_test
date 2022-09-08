@@ -5,7 +5,6 @@ env:
 jobs:
 
   job1:
-    on: push
     runs-on: ubuntu-latest
 
     steps:
@@ -14,7 +13,6 @@ jobs:
       run: echo Hello, world!.
 
   job2:
-    on: pull_request
     runs-on: ubuntu-latest
     env:
       monTexte: "Bonjour le monde"
